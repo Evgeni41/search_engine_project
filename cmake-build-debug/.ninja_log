@@ -1,0 +1,18 @@
+# ninja log v5
+4	5598	6739044544132299	CMakeFiles/search_engine.dir/main.cpp.obj	8095c74146610812
+5598	13015	6739044618497901	search_engine.exe	6fb0ba2c42e8f4ce
+5598	13015	6739044618497901	search_engine[1]_tests.cmake	6fb0ba2c42e8f4ce
+9687	9848	6728728069690187	lib/libgtest_maind.a	d0d5d9156c0b9557
+27	1283	6728727983962388	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	c1c34363ce8ae5df
+17	7145	6728728042385556	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	2f2609afed469bf9
+7147	9687	6728728068012207	lib/libgtestd.a	bd4b22405a32a1cc
+5598	13015	6739044618497901	C:/Program Files/CLionProjects/search_engine/cmake-build-debug/search_engine[1]_tests.cmake	6fb0ba2c42e8f4ce
+63	561	6739088683264394	CMakeFiles/search_engine.dir/breakText.cpp.obj	81cb56c1e042ed9c
+39	874	6739088686393393	CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj	ad7eacb8272f1317
+29	1215	6739088689812285	CMakeFiles/search_engine.dir/SearchServer.cpp.obj	5b3d242c50da0
+5	3265	6739088710196008	CMakeFiles/search_engine.dir/ConverterJSON.cpp.obj	fd963a2ea72f7c48
+18	4251	6739088720052785	CMakeFiles/search_engine.dir/main.cpp.obj	8095c74146610812
+4	3543	6739090567001099	CMakeFiles/search_engine.dir/ConverterJSON.cpp.obj	fd963a2ea72f7c48
+3544	7067	6739090602293912	search_engine.exe	2247206d879fa2c8
+3544	7067	6739090602293912	search_engine[1]_tests.cmake	2247206d879fa2c8
+3544	7067	6739090602293912	C:/Program Files/CLionProjects/search_engine/cmake-build-debug/search_engine[1]_tests.cmake	2247206d879fa2c8
