@@ -62,6 +62,7 @@ std::vector<std::string> ConverterJSON::GetRequests()
         {
             requests.push_back(request);
         }
+        requests_file.close();
         return requests;
     }
     else
@@ -111,8 +112,9 @@ void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>> answers)
                 request_results["result"] = false;
                 requests_answers[result_name] = request_results;
             }
-            search_result["answers"] = requests_answers;
+
         }
+        search_result["answers"] = requests_answers;
         answer_file << search_result;
         answer_file.close();
     }
