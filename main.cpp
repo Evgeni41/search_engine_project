@@ -2,7 +2,7 @@
 #include "InvertedIndex.h"
 #include "SearchServer.h"
 #include <fstream>
-#include "nlohmann/json.hpp"
+#include "json.hpp"
 #include "gtest/gtest.h"
 
 std::string EngineVersion = "0.1";
@@ -56,6 +56,8 @@ void starting(std::ifstream& file_json)
 
 int main() {
 
+    ::testing::InitGoogleTest();
+    RUN_ALL_TESTS();
     try {
         std::ifstream config_file("config.json");
         starting(config_file);
@@ -79,7 +81,21 @@ int main() {
     answers_clear.close();
     ConverterJSON converterJson;
     InvertedIndex invertedIndex;
-    invertedIndex.UpdateDocumentBase(converterJson.GetTextDocuments());
+    try
+    {
+        invertedIndex.UpdateDocumentBase(converterJson.GetTextDocuments());
+    }
+    catch (const InvalidRequestPathException &request_path_error)
+    {
+        std::cerr << request_path_error.what() << std::endl;
+        return 0;
+    }
+    catch (const std::exception &config_path_error)
+    {
+        std::cerr << "Invalid config path! Cannot find config.json!" << std::endl;
+        return 0;
+    }
+
 
     std::string command = "exit";
     do
@@ -96,9 +112,11 @@ int main() {
     } while (command != "exit");
 
 
-
-
 }
+
+
+
+
 
 
 

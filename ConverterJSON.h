@@ -2,6 +2,14 @@
 #include "SearchServer.h"
 #include <iostream>
 #include <vector>
+#include <exception>
+
+class InvalidRequestPathException : public std::exception
+{
+public:
+    const char* what() const noexcept override;
+};
+
 
 class ConverterJSON
 {

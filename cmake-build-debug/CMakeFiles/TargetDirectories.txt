@@ -31,10 +31,3 @@ C:/Program Files/CLionProjects/search_engine/cmake-build-debug/_deps/googletest-
 C:/Program Files/CLionProjects/search_engine/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/install/local.dir
 C:/Program Files/CLionProjects/search_engine/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/edit_cache.dir
 C:/Program Files/CLionProjects/search_engine/cmake-build-debug/_deps/googletest-build/googletest/CMakeFiles/install/strip.dir
-C:/Program Files/CLionProjects/search_engine/cmake-build-debug/nlohmann_json/CMakeFiles/install/strip.dir
-C:/Program Files/CLionProjects/search_engine/cmake-build-debug/nlohmann_json/CMakeFiles/rebuild_cache.dir
-C:/Program Files/CLionProjects/search_engine/cmake-build-debug/nlohmann_json/CMakeFiles/test.dir
-C:/Program Files/CLionProjects/search_engine/cmake-build-debug/nlohmann_json/CMakeFiles/install/local.dir
-C:/Program Files/CLionProjects/search_engine/cmake-build-debug/nlohmann_json/CMakeFiles/install.dir
-C:/Program Files/CLionProjects/search_engine/cmake-build-debug/nlohmann_json/CMakeFiles/edit_cache.dir
-C:/Program Files/CLionProjects/search_engine/cmake-build-debug/nlohmann_json/CMakeFiles/list_install_components.dir

@@ -20,11 +20,8 @@ enable_testing()
 
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
-add_subdirectory(nlohmann_json)
-
 add_executable(search_engine main.cpp ConverterJSON.h ConverterJSON.cpp InvertedIndex.cpp InvertedIndex.h SearchServer.cpp SearchServer.h breakText.cpp breakText.h)
 
-target_link_libraries(search_engine PRIVATE nlohmann_json::nlohmann_json)
 target_link_libraries(search_engine PRIVATE gtest_main)
 include(GoogleTest)
 gtest_discover_tests(search_engine)

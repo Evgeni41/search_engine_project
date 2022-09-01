@@ -1,23 +1,29 @@
 #include "ConverterJSON.h"
-#include "nlohmann/json.hpp"
+#include "json.hpp"
 #include <fstream>
+
+const char* InvalidRequestPathException::what() const noexcept
+{
+        return "Invalid request path! Cannot find request.json!";
+}
 
 std::vector<std::string> ConverterJSON::GetTextDocuments()
 {
     std::ifstream config_json(config_path);
+    if (!config_json.is_open())
+    {
+        throw std::exception();
+    }
     nlohmann::json config;
     config_json >> config;
     config_json.close();
     std::vector<std::string> paths = config["files"];
     std::vector<std::string> textDocuments;
-    for (auto &element : paths)
-    {
+    for (auto &element: paths) {
         std::ifstream file(element);
-        if (file.is_open())
-        {
+        if (file.is_open()) {
             std::string file_text;
-            while (!file.eof())
-            {
+            while (!file.eof()) {
                 std::string str;
                 getline(file, str);
                 file_text += str;
@@ -35,11 +41,14 @@ std::vector<std::string> ConverterJSON::GetTextDocuments()
 
     }
     return textDocuments;
+
+
 }
 
 int ConverterJSON::GetResponsesLimit()
 {
     std::ifstream config_file(config_path);
+    if (!config_file.is_open()) throw std::exception();
     nlohmann::json config_json;
     config_file >> config_json;
     nlohmann::json config_data;
@@ -48,29 +57,23 @@ int ConverterJSON::GetResponsesLimit()
     config_file.close();
     if (responsesLimit <= 0) return 0;
     else return responsesLimit;
+
 }
 
 std::vector<std::string> ConverterJSON::GetRequests()
 {
     std::ifstream requests_file(requests_path);
-    if (requests_file.is_open())
+    if (!requests_file.is_open()) throw InvalidRequestPathException();
+    nlohmann::json requests_json;
+    requests_file >> requests_json;
+    std::vector<std::string> requests;
+    for (auto &request : requests_json["requests"])
     {
-        nlohmann::json requests_json;
-        requests_file >> requests_json;
-        std::vector<std::string> requests;
-        for (auto &request : requests_json["requests"])
-        {
-            requests.push_back(request);
-        }
-        requests_file.close();
-        return requests;
+        requests.push_back(request);
     }
-    else
-    {
-        std::cerr << "Cannot open requests.json" << std::endl;
-        std::vector<std::string> error;
-        return error;
-    }
+    requests_file.close();
+    return requests;
+
 }
 
 void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>> answers)
@@ -115,7 +118,7 @@ void ConverterJSON::putAnswers(std::vector<std::vector<RelativeIndex>> answers)
 
         }
         search_result["answers"] = requests_answers;
-        answer_file << search_result;
+        answer_file << search_result.dump(4);
         answer_file.close();
     }
 
