@@ -1,22 +1,14 @@
 # ninja log v5
-4	4626	6835774567150954	CMakeFiles/search_engine.dir/main.cpp.obj	8095c74146610812
-4728	13205	6835775454811018	search_engine.exe	2247206d879fa2c8
-4728	13205	6835775454811018	search_engine[1]_tests.cmake	2247206d879fa2c8
-63	561	6739088683264394	CMakeFiles/search_engine.dir/breakText.cpp.obj	81cb56c1e042ed9c
+4	4507	6837194994599474	CMakeFiles/search_engine.dir/main.cpp.obj	8ac3e1de7c7417a5
+4527	13618	6837195085823253	search_engine.exe	2247206d879fa2c8
+4527	13618	6837195085823253	search_engine[1]_tests.cmake	2247206d879fa2c8
+58	669	6837194956401547	CMakeFiles/search_engine.dir/breakText.cpp.obj	c7c59ad453b35ac3
 9687	9848	6728728069690187	lib/libgtest_maind.a	d0d5d9156c0b9557
 27	1283	6728727983962388	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	c1c34363ce8ae5df
 17	7145	6728728042385556	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	2f2609afed469bf9
 7147	9687	6728728068012207	lib/libgtestd.a	bd4b22405a32a1cc
-4728	13205	6835775454811018	C:/Program Files/CLionProjects/search_engine/cmake-build-debug/search_engine[1]_tests.cmake	2247206d879fa2c8
-5	4727	6835775369958828	CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj	ad7eacb8272f1317
-29	2158	6835766876630134	CMakeFiles/search_engine.dir/SearchServer.cpp.obj	5b3d242c50da0
-18	3721	6835766892195157	CMakeFiles/search_engine.dir/ConverterJSON.cpp.obj	fd963a2ea72f7c48
-2	680	6837194949203596	build.ninja	321447a38deb4b8d
-58	669	6837194956401547	CMakeFiles/search_engine.dir/breakText.cpp.obj	c7c59ad453b35ac3
+4527	13618	6837195085823253	C:/Program Files/CLionProjects/search_engine/cmake-build-debug/search_engine[1]_tests.cmake	2247206d879fa2c8
+14	4526	6837194994809363	CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj	edb03cedc4f70351
 35	2101	6837194970656778	CMakeFiles/search_engine.dir/SearchServer.cpp.obj	77248d9d35b5b815
 25	3860	6837194988181433	CMakeFiles/search_engine.dir/ConverterJSON.cpp.obj	83b459a1d3920364
-4	4507	6837194994599474	CMakeFiles/search_engine.dir/main.cpp.obj	8ac3e1de7c7417a5
-14	4526	6837194994809363	CMakeFiles/search_engine.dir/InvertedIndex.cpp.obj	edb03cedc4f70351
-4527	13618	6837195085823253	search_engine.exe	2247206d879fa2c8
-4527	13618	6837195085823253	search_engine[1]_tests.cmake	2247206d879fa2c8
-4527	13618	6837195085823253	C:/Program Files/CLionProjects/search_engine/cmake-build-debug/search_engine[1]_tests.cmake	2247206d879fa2c8
+2	680	6837577009890836	build.ninja	321447a38deb4b8d

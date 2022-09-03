@@ -1,9 +1,4 @@
 "C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.2.3/bin/ninja/win/ninja.exe" -G Ninja "C:\Program Files\CLionProjects\search_engine"
--- Found Python: B:/Python310/python.exe (found version "3.10.5") found components: Interpreter 
-CMake Error at CMakeLists.txt:23 (add_subdirectory):
-  add_subdirectory given source "nlohmann_json" which is not an existing
-  directory.
-
-
--- Configuring incomplete, errors occurred!
-See also "C:/Program Files/CLionProjects/search_engine/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Program Files/CLionProjects/search_engine/cmake-build-debug
